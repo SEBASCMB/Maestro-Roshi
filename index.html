@@ -38,6 +38,54 @@
     </header>
     <!-- MAIN -->
     <main class="main">
+
+      <!-- AUTHENTICATION -->
+      <section class="auth container" id="auth-section">
+        <div class="auth__forms">
+          <!-- Registration Form -->
+          <form class="auth__form" id="register-form">
+            <h2 class="auth__title">Register</h2>
+            <div class="auth__input-group">
+              <label for="register-email">Email</label>
+              <input type="email" id="register-email" required />
+            </div>
+            <div class="auth__input-group">
+              <label for="register-password">Password</label>
+              <input type="password" id="register-password" required />
+            </div>
+            <button type="submit" class="auth__button">Register</button>
+          </form>
+
+          <!-- Login Form -->
+          <form class="auth__form" id="login-form">
+            <h2 class="auth__title">Login</h2>
+            <div class="auth__input-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" required />
+            </div>
+            <div class="auth__input-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" required />
+            </div>
+            <button type="submit" class="auth__button">Login</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section class="profile container" id="profile-section" style="display: none;">
+        <h2 class="profile__title">User Profile</h2>
+        <div id="profile-data">
+          <!-- Profile data will be displayed here -->
+        </div>
+        <button id="logout-button" class="auth__button">Logout</button>
+      </section>
+
+      <!-- MESSAGES -->
+      <section class="messages container" id="message-section">
+        <!-- Messages will be displayed here -->
+      </section>
+
       <!-- HOME -->
       <section class="home">
         <div class="home__container container">
